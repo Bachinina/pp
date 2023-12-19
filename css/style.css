@@ -5266,8 +5266,8 @@ a.link-hor::after {
 }
 @media (max-width: 1199px) {
   .checkbox-color input:checked + label .color {
-    outline-color: #FFFFFF;
     outline: 1px solid transparent;
+    outline-color: #FFFFFF;
     outline-offset: -2px;
   }
 }
@@ -5404,6 +5404,12 @@ a.link-hor::after {
   }
   .filter label {
     font-size: 16px;
+  }
+  .filter .checkbox input + label::before {
+    background-color: #FFFFFF;
+  }
+  .filter .checkbox input:checked + label::before {
+    background-color: #313434;
   }
 }
 .checkboxes {
