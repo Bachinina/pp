@@ -7873,7 +7873,7 @@ a.link-hor::after {
 }
 @media (max-width: 1199px) {
   .header__btn-underline {
-    padding-bottom: 6px;
+    padding-bottom: 6px !important;
     border-bottom: 1px solid #313434;
   }
 }
@@ -9195,7 +9195,7 @@ a.link-hor::after {
 }
 @media (max-width: 1199px) {
   .content-page__setts {
-    padding-top: 0 8px 0;
+    padding: 20px 8px 0;
   }
 }
 .content-page__sort-select {
