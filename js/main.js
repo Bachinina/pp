@@ -706,15 +706,200 @@ $(function () {
   }
 });
 
-// PARALLAX
 
-// $(window).scroll(function () {
-//   var scrollTop = $(this).scrollTop();
-//   // Изменяем позицию фонового изображения в зависимости от прокрутки страницы
-//   $('.parallax').css('background-position-y', -(scrollTop * 0.3) + 'px');
-// });
+// FILTER FIXED
+$(function () {
+  $('[data-fixed-block]').each(function () {
+    const block = $(this);
+    const header = $('[data-header]');
+    let margin = 0;
+    let screenTopMargin = header.outerHeight() + margin;
 
-// $(window).scroll(function () {
-//   var scrollTop = $(this).scrollTop();
-//   $('[data-parallax]').css('background-position', 'center ' + scrollTop * 0.5 + 'px');
-// });
+    // высота экрана
+    const windowHeight = $(window).outerHeight();
+    // высота области, в которой ездит блок
+    let containerHeight = windowHeight - margin * 2 - header.outerHeight();
+
+    // зафиксирован ли блок по верхней границе
+    let isBlockStickyTop = false;
+    let isBlockStickyBottom = false;
+
+    let currentPos;
+    let currentBlockTopPos;
+    let currentBlockHeight = block.outerHeight();
+
+    // загрузка / ресайз
+    const setDefault = function () {
+      block.addClass('sticky');
+      block.css({
+        top: screenTopMargin,
+      });
+      isBlockStickyTop = true;
+    };
+
+    const onCatalogPageScroll = function () {
+      currentBlockTopPos = block.position().top;
+
+      // проверяем, sticky ли блок по верхней границе
+      if (isBlockStickyTop) {
+        // проверяем, листает ли пользователь вниз
+        if ($(window).scrollTop() > currentPos) {
+          // проверяем, выше ли блок высоты видимой области
+          if (block.outerHeight() > containerHeight) {
+
+            // если блок выше высоты видимой области, то выключаем у него sticky и делаем на margin
+            block.css({
+              'top': screenTopMargin,
+              'margin-top': currentBlockTopPos,
+            });
+            block.removeClass('sticky');
+            isBlockStickyTop = false;
+          } else {
+            // если не выше, то делаем дефолтным sticky
+            setDefault();
+          }
+        }
+      } else if (isBlockStickyBottom) {
+        // проверяем, sticky ли блок по нижней границе
+
+        // если пользователь скроллит вверх
+        if ($(window).scrollTop() < currentPos) {
+
+          if (currentBlockHeight === block.outerHeight()) {
+            // то фиксируем блок через margin
+            block.css({
+              'top': screenTopMargin,
+              'margin-top': currentBlockTopPos,
+            });
+            block.removeClass('sticky');
+            isBlockStickyBottom = false;
+          }
+
+        } else {
+          // если пользователь скроллит вниз
+          // проверяем, изменился ли размер блока
+          if (currentBlockHeight !== block.outerHeight()) {
+
+            // проверяем, увеличился ли размер блока
+            if (currentBlockHeight <= block.outerHeight()) {
+              block.css({
+                'top': screenTopMargin,
+                'margin-top': currentBlockTopPos,
+              });
+              block.removeClass('sticky');
+
+              isBlockStickyTop = false;
+              isBlockStickyBottom = false;
+            }
+          }
+        }
+      } else {
+        // проверяем, скроллит ли пользователь вниз
+        if ($(window).scrollTop() > currentPos) {
+          // проверка долистали ли до конца блока, если долистали, то делаем блок sticky  с отрицательным top
+          if (block[0].getBoundingClientRect().top + block.outerHeight() <= $(window).outerHeight() - margin) {
+
+            block.addClass('sticky');
+            block.css({
+              top: containerHeight - block.outerHeight() + screenTopMargin,
+              'margin-top': 0,
+            });
+
+            isBlockStickyBottom = true;
+          }
+        } else {
+          // проверяем, если блок коснулся верха, то делаем его sticky по верхней границе
+          if (block[0].getBoundingClientRect().top >= screenTopMargin) {
+            block.css({
+              top: screenTopMargin,
+              'margin-top': 0,
+            });
+            block.addClass('sticky');
+
+            isBlockStickyTop = true;
+          }
+        }
+      }
+    };
+
+
+    setDefault();
+
+    $(window).on('scroll', function () {
+      if ($(window).width() >= 1200) {
+        onCatalogPageScroll();
+        currentPos = $(window).scrollTop();
+        currentBlockHeight = block.outerHeight();
+      }
+    });
+    $(window).on('resize', function () {
+      if ($(window).width() >= 1200) {
+        margin = 0;
+        screenTopMargin = $('[data-header]').outerHeight() + margin;
+        containerHeight = $(window).outerHeight() - margin * 2 - header.outerHeight();
+
+        block.addClass('sticky');
+        block.css({
+          top: screenTopMargin,
+        });
+      }
+    });
+  });
+});
+
+// RANGE
+$('[data-range-slider-wrap]').each(function () {
+  const range = $(this);
+  const min = range.find('[data-range-min]');
+  const max = range.find('[data-range-max]');
+  const slider = range.find('[data-range-slider]');
+
+  min.on('change', function () {
+    var minValue = parseFloat($(this).val());
+    var maxValue = parseFloat(max.val());
+
+    // Проверяем, чтобы новое значение min было меньше или равно текущему значению max
+    if (minValue <= maxValue) {
+      slider.data('ionRangeSlider').update({
+        from: minValue
+      });
+    }
+  });
+
+  max.on('change', function () {
+    var minValue = parseFloat(min.val());
+    var maxValue = parseFloat($(this).val());
+
+    // Проверяем, чтобы новое значение max было больше или равно текущему значению min
+    if (maxValue >= minValue) {
+      slider.data('ionRangeSlider').update({
+        to: maxValue
+      });
+    }
+  });
+
+  slider.ionRangeSlider({
+    onStart: function (data) {
+      max.val(data.to);
+    },
+    onChange: function (data) {
+      min.val(data.from);
+      max.val(data.to);
+    }
+  });
+});
+
+
+// FILTER OPEN MOB
+
+$('[data-filter-open-btn]').on('click', function () {
+  $('[data-filter]').addClass('active');
+  $('body').addClass('filter-is-opened');
+});
+
+$('[data-filter-close-btn]').on('click', function () {
+  $('[data-filter]').removeClass('active');
+  $('body').removeClass('filter-is-opened');
+});
+
+

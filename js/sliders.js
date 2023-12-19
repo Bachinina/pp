@@ -216,7 +216,6 @@ $(document).ready(function () {
 
 
     if (slider.hasAttr('data-slider-reviews')) {
-      // $(this).on('init', function () {
       $(this).find($('[data-text-wrap]')).each(function () {
         const wrap = $(this);
         const text = wrap.find('[data-text]');
@@ -237,41 +236,177 @@ $(document).ready(function () {
           }
         })
       })
-      // })
     }
+  });
 
-    if (slider.hasAttr('data-compl-slider')) {
-      $(this).slick({
-        accessibility: false,
-        speed: 600,
-        draggable: false,
-        dots: false,
-        arrows: true,
-        prevArrow: prevArrow,
-        swipeToSlide: true,
-        nextArrow: nextArrow,
-        variableWidth: true,
-        infinite: !!slider.settings.isLooped,
-        appendArrows: slider.settings.buttonContainer,
-        responsive: [{
-          breakpoint: 1199,
-          settings: {
-            draggable: true,
-            speed: 150,
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            dots: isDotted,
-            arrows: !isDotted,
-            variableWidth: false,
-            slideCount: 1,
-            adaptiveHeight: true
-          }
-        }]
+  $('[data-catalog-slider]').each(function () {
+    $(this).slick({
+      accessibility: false,
+      speed: 600,
+      draggable: true,
+      slidesToShow: 3,
+      dots: true,
+      arrows: false,
+      prevArrow: prevArrow,
+      swipeToSlide: true,
+      nextArrow: nextArrow,
+      infinite: true,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 5
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1
+        },
+      }]
+    });
+  });
+
+  $('[data-banner-slider-wrap]').each(function () {
+    const wrap = $(this);
+    const slider = wrap.find('[data-banner-slider]');
+
+    slider.slick({
+      appendArrows: wrap.find('[data-banner-slider-btns]'),
+      appendDots: wrap.find('[data-banner-slider-counter]'),
+      fade: true,
+      speed: 900,
+      draggable: false,
+      waitForAnimate: true,
+      lazyLoad: 'ondemand',
+      prevArrow: prevArrow,
+      nextArrow: nextArrow,
+      dots: true,
+      autoplay: false,
+      customPaging: counter,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          draggable: true,
+        }
+      }]
+    });
+
+    if (slider && slider.length > 0) {
+      // Установка текста заголовка при инициализации
+      wrap.find('[data-banner-slider-title]').text(slider.find('.slick-slide').eq(0).find('[data-card-title]').text());
+
+
+      slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        wrap.find('[data-banner-slider-title]').text(slick.$slides.eq(nextSlide).find('[data-card-title]').text());
       });
     }
   });
 
+  $('[data-new-slider-wrap]').each(function () {
+    const wrap = $(this);
+    const slider = wrap.find('[data-new-slider]');
 
+    slider.slick({
+      appendArrows: wrap.find('[data-new-slider-btns]'),
+      appendDots: wrap.find('[data-new-slider-counter]'),
+      speed: 600,
+      draggable: false,
+      slidesToShow: 3,
+      waitForAnimate: true,
+      lazyLoad: 'ondemand',
+      prevArrow: prevArrow,
+      nextArrow: nextArrow,
+      dots: true,
+      autoplay: false,
+      customPaging: counter,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          draggable: true,
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          draggable: true,
+          slidesToShow: 2,
+          arrows: true,
+          dots: true,
+          appendArrows: wrap.find('[data-new-slider-btns-mob]'),
+          appendDots: wrap.find('[data-new-slider-counter-mob]'),
+        }
+      }, {
+        breakpoint: 575,
+        settings: {
+          draggable: true,
+          slidesToShow: 1,
+          arrows: true,
+          dots: true,
+          appendArrows: wrap.find('[data-new-slider-btns-mob]'),
+          appendDots: wrap.find('[data-new-slider-counter-mob]'),
+        }
+      }]
+    });
+
+    $('[data-new-block-toggle]').on('click', function () {
+      $('[data-new-block]').toggleClass('active');
+
+      slider.slick('unslick');
+      slider.slick({
+        appendArrows: wrap.find('[data-new-slider-btns]'),
+        appendDots: wrap.find('[data-new-slider-counter]'),
+        speed: 600,
+        draggable: false,
+        slidesToShow: 3,
+        waitForAnimate: true,
+        lazyLoad: 'ondemand',
+        prevArrow: prevArrow,
+        nextArrow: nextArrow,
+        dots: true,
+        autoplay: false,
+        customPaging: counter,
+        responsive: [{
+          breakpoint: 1199,
+          settings: {
+            draggable: true,
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            draggable: true,
+            slidesToShow: 2,
+            arrows: true,
+            dots: true,
+            appendArrows: wrap.find('[data-new-slider-btns-mob]'),
+            appendDots: wrap.find('[data-new-slider-counter-mob]'),
+          }
+        }, {
+          breakpoint: 575,
+          settings: {
+            draggable: true,
+            slidesToShow: 1,
+            arrows: true,
+            dots: true,
+            appendArrows: wrap.find('[data-new-slider-btns-mob]'),
+            appendDots: wrap.find('[data-new-slider-counter-mob]'),
+          }
+        }]
+      });
+    });
+  });
 });
