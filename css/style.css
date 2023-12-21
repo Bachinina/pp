@@ -8291,7 +8291,7 @@ a.link-hor::after {
     margin-right: 0;
     margin-bottom: 35px;
   }
-  .header__menu-preview > *:last-of-type {
+  .header__menu-preview > *.header__btn-underline {
     margin-bottom: 0;
   }
 }
