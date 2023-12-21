@@ -92,6 +92,9 @@
       <symbol id="icon-arrow-bottom"  viewBox="0 0 20 13" fill="none">
         <path d="M1 1L10 11L19 1" stroke="#313434" stroke-width="2"/>
       </symbol>
+      <symbol id="icon-btn-arrow-bottom"  viewBox="0 0 8 11">
+        <path d="M3.64645 10.3536C3.84171 10.5488 4.15829 10.5488 4.35355 10.3536L7.53553 7.17157C7.7308 6.97631 7.7308 6.65973 7.53553 6.46447C7.34027 6.2692 7.02369 6.2692 6.82843 6.46447L4 9.29289L1.17157 6.46447C0.976311 6.2692 0.659729 6.2692 0.464466 6.46447C0.269204 6.65973 0.269204 6.97631 0.464466 7.17157L3.64645 10.3536ZM3.5 2.18557e-08L3.5 10L4.5 10L4.5 -2.18557e-08L3.5 2.18557e-08Z"/>
+      </symbol>
   
     </svg>
     <!-- endinject -->
@@ -134,9 +137,11 @@
               </div>
   
               <!-- Кнопка открытия попапа с выбором города -->
-              <button class="header__btn-select header__btn-underline header__text btn-with-arr menu-item">
-                Москва
-              </button>
+              <div class="header__btn-underline">
+                <button class="header__btn-select  header__text btn-with-arr menu-item">
+                  Москва
+                </button>
+              </div>
             </div>
   
             <div class="header__menu-mob">
@@ -901,7 +906,7 @@
                           </div>
 
                           <!-- ONCLICK тут для демонстрации -->
-                          <button class="card__btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
+                          <button class="btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
                             <svg class="icon-like" width="23" height="19">
                               <use xlink:href="#hn-like"></use>
                             </svg>
@@ -943,7 +948,7 @@
                           </div>
 
                           <!-- ONCLICK тут для демонстрации -->
-                          <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                          <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                             <svg class="icon-like" width="23" height="19">
                               <use xlink:href="#hn-like"></use>
                             </svg>
@@ -986,7 +991,7 @@
                           </div>
 
                           <!-- ONCLICK тут для демонстрации -->
-                          <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                          <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                             <svg class="icon-like" width="23" height="19">
                               <use xlink:href="#hn-like"></use>
                             </svg>
@@ -1028,7 +1033,7 @@
                           </div>
 
                           <!-- ONCLICK тут для демонстрации -->
-                          <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                          <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                             <svg class="icon-like" width="23" height="19">
                               <use xlink:href="#hn-like"></use>
                             </svg>
@@ -1339,7 +1344,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1381,7 +1386,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1424,7 +1429,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1465,7 +1470,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1509,7 +1514,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1554,7 +1559,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1597,7 +1602,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1639,7 +1644,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like active" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1681,7 +1686,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1724,7 +1729,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -1807,7 +1812,7 @@
                                 </div>
 
                                 <!-- ONCLICK тут для демонстрации -->
-                                <button class="card__btn-compare def btn-like active"
+                                <button class="btn-compare def btn-like active"
                                   onclick="$(this).toggleClass('active')">
                                   <svg class="icon-like" width="23" height="19">
                                     <use xlink:href="#hn-like"></use>
@@ -1850,7 +1855,7 @@
                                 </div>
 
                                 <!-- ONCLICK тут для демонстрации -->
-                                <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                                <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                                   <svg class="icon-like" width="23" height="19">
                                     <use xlink:href="#hn-like"></use>
                                   </svg>
@@ -1893,7 +1898,7 @@
                                 </div>
 
                                 <!-- ONCLICK тут для демонстрации -->
-                                <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                                <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                                   <svg class="icon-like" width="23" height="19">
                                     <use xlink:href="#hn-like"></use>
                                   </svg>
@@ -1937,7 +1942,7 @@
                                 </div>
 
                                 <!-- ONCLICK тут для демонстрации -->
-                                <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                                <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                                   <svg class="icon-like" width="23" height="19">
                                     <use xlink:href="#hn-like"></use>
                                   </svg>
@@ -1987,7 +1992,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -2031,7 +2036,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -2076,7 +2081,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -2119,7 +2124,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
@@ -2160,7 +2165,7 @@
                         </div>
 
                         <!-- ONCLICK тут для демонстрации -->
-                        <button class="card__btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                        <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
                           <svg class="icon-like" width="23" height="19">
                             <use xlink:href="#hn-like"></use>
                           </svg>
