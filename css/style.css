@@ -400,6 +400,7 @@ button:active {
   /* padding вокруг плашки */
 }
 .img-zoom {
+  display: block;
   position: relative;
   cursor: pointer;
 }
@@ -9685,7 +9686,7 @@ a.checkbox .label {
   top: 0;
   width: 150vw;
   height: 100%;
-  left: -25vw;
+  left: -50vw;
   background-color: #E6D7C2;
   z-index: -1;
 }
@@ -10725,6 +10726,9 @@ input:checked + .prod__checkbox-item img,
 .prod-modal .prod__btns > *:last-of-type {
   margin-right: 0;
 }
+.prod__int-img-wrap {
+  position: relative;
+}
 .sot__pl-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10851,7 +10855,10 @@ input:checked + .prod__checkbox-item img,
 .act__img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  line-height: 1;
+  line-height: 0;
+}
+.act__img img {
+  line-height: 0;
 }
 @media (max-width: 1439px) {
   .act__img {
