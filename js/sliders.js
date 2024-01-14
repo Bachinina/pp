@@ -62,33 +62,6 @@ $(document).ready(function () {
     });
   });
 
-
-  $('[data-prod-slider]').each(function () {
-    $(this).slick({
-      fade: true,
-      accessibility: false,
-      speed: 800,
-      draggable: false,
-      waitForAnimate: true,
-      dots: true,
-      arrows: true,
-      prevArrow: prevArrow,
-      swipeToSlide: true,
-      nextArrow: nextArrow,
-      autoplay: false,
-      autoplaySpeed: 5000,
-      responsive: [{
-        breakpoint: 1199,
-        settings: {
-          draggable: true,
-          speed: 150,
-          fade: false,
-        }
-      }]
-    });
-  });
-
-
   $('[data-slider]').each(function () {
     const slider = $(this);
 
@@ -407,6 +380,30 @@ $(document).ready(function () {
           }
         }]
       });
+    });
+  });
+
+
+  
+  $('[data-prod-slider]').each(function () {
+    $(this).slick({
+      fade: true,
+      accessibility: false,
+      speed: 800,
+      draggable: true,
+      waitForAnimate: true,
+      dots: true,
+      arrows: false,
+      swipeToSlide: true,
+      autoplay: false,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          draggable: true,
+          speed: 150,
+          fade: false,
+        }
+      }]
     });
   });
 });

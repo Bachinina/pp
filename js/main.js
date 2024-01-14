@@ -166,7 +166,7 @@ $(window).on('load', (function () {
 
 
   // SCROLL ANCHOR
-  $("a[href^='#']").on("click", function (e) {
+  $("a[href^='#']:not(a[href='#'])").on("click", function (e) {
     var fixed_offset = $('.header').outerHeight() + 30;
     // if ($(window).width() <= 1199) {
     // fixed_offset = 35 + 65;
@@ -401,9 +401,18 @@ $(window).on('load', (function () {
   // MODAL OPENING
   $('[data-open-modal]').on('click', function () {
     const modal = $($(this).attr('data-open-modal'));
+    window.onCloseMenu();
     closeModals();
     $(this).blur();
-    modal.addClass('active');
+
+    if (modal.length > 0) {
+      modal.addClass('active');
+
+      $('body').css({
+        'overflow': 'hidden',
+      });
+    }
+
   });
 
   // MODAL CLOSING
@@ -426,6 +435,9 @@ $(window).on('load', (function () {
         // CLEAR FORM
         form.trigger("reset");
       }
+      $('body').css({
+        'overflow': 'auto',
+      });
       document.removeEventListener('click', closeAll);
     };
 
@@ -535,6 +547,13 @@ $('[data-catalog]').each(function () {
 
     overlay.on('click', onClose);
     $(document).on('keydown', onCloseByEsc);
+    $(document).on('click', onCloseByClick);
+  }
+
+  const onCloseByClick = function (evt) {
+    if(!evt.target.hasAttribute('data-header') && evt.target.closest('[data-header]') === null) {
+      onClose();
+    }
   }
 
   const onClose = function () {
@@ -547,6 +566,8 @@ $('[data-catalog]').each(function () {
 
     overlay.off('click', onClose);
     $(document).off('keydown', onCloseByEsc);
+    $(document).off('click', onCloseByClick);
+
   }
 
   window.onCloseMenu = onClose;
@@ -887,19 +908,25 @@ $('[data-range-slider-wrap]').each(function () {
       max.val(data.to);
     }
   });
+
+
+  // FILTER OPEN MOB
+
+  $('[data-filter-open-btn]').on('click', function () {
+    $('[data-filter]').addClass('active');
+    $('body').addClass('filter-is-opened');
+  });
+
+  $('[data-filter-close-btn]').on('click', function () {
+    $('[data-filter]').removeClass('active');
+    $('body').removeClass('filter-is-opened');
+  });
+
+
+
 });
 
 
-// FILTER OPEN MOB
 
-$('[data-filter-open-btn]').on('click', function () {
-  $('[data-filter]').addClass('active');
-  $('body').addClass('filter-is-opened');
-});
-
-$('[data-filter-close-btn]').on('click', function () {
-  $('[data-filter]').removeClass('active');
-  $('body').removeClass('filter-is-opened');
-});
 
 

@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
   <div class="visually-hidden">
     <!-- inject:svg -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -109,7 +110,6 @@
     </svg>
     <!-- endinject -->
   </div>
-
   <header class="header" data-header>
     <div class="header__top">
       <div class="header__container container">
@@ -839,133 +839,1238 @@
     </div>
   </header>
 
-  <main>
-    <h1 class="visually-hidden">Интернет-магазин межкомнатных дверей PortaPrima</h1>
+  <main class="content-page">
+    <div class="content-page__head" style="background-image: url(img/bg-top.jpg);">
+      <div class="content-page__head-cont container">
 
-    <!-- Слайдер -->
-    <section class="info">
-      <h2 class="visually-hidden">О нас</h2>
-
-      <div class="info-slider info__slides-wrap slider-control" data-main-slider-wrap>
-        <div class="info__slides" data-main-slider>
-
-          <!-- Слайд -->
-          <div class="info__slide">
-            <div class="info__slide-container container">
-              <div class="info__slide-content">
-                <div class="info__slide-text-main">
-                  -25%
-                </div>
-                <!-- ЗДЕСЬ ДОЛЖНА БЫТЬ ВОЗМОЖНОСТЬ ВСТАВЛЯТЬ НЕ ПРОСТО ТЕКСТ, А РАЗМЕТКУ!
-                Например, перенос строки - <br> или неразрывный пробел &nbsp; -->
-                <div class="info__slide-text">
-                  Скидка на&nbsp;хиты <br> коллекции Tivoli, Sorrento-R <br> и&nbsp;Neo&nbsp;Classic
-                </div>
-
-                <div class="info__slide__btns">
-                  <a class="btn-l-white btn-upper" href="#">Подробнее</a>
-                </div>
-              </div>
-
-              <!-- ЭТОТ БЛОК ДОБАВЛЯЕТСЯ ТОЛЬКО ЕСЛИ У СЛАЙДА ЕСТЬ ССЫЛКА НА АКЦИИ ИЛИ НА РАЗДЕЛ -->
-              <div class="info__slide-bottom">
-                <div class="container">
-                  <!-- Вставить ссылку на акции -->
-                  <a href="#">Акции</a>
-
-                  <!-- Вставить ссылку на раздел -->
-                  <a class="ml-auto btn-arrow-link" href="#">Перейти в&nbsp;раздел
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <picture>
-              <!-- Сюда вставляется картинка для десктопа -->
-              <source media="(min-width: 768px)" srcset="img/main-slide.jpg">
-              <!-- Сюда вставляется картинка для мобилы -->
-              <img src="img/main-slide.jpg" alt="">
-            </picture>
-          </div>
-
-          <!-- Слайд -->
-          <div class="info__slide">
-            <div class="info__slide-container container">
-              <div class="info__slide-content">
-                <div class="info__slide-text-main">
-                  Лучшее предложение
-                </div>
-                <div class="info__slide-text">
-                  Соотношение цена&nbsp;-&nbsp;качество на&nbsp;рынке
-                </div>
-              </div>
-
-              <div class="info__slide__btns">
-                <a class="btn-l-white btn-upper" href="#">Подробнее</a>
-              </div>
-
-            </div>
-            <picture>
-              <!-- Сюда вставляется картинка для десктопа -->
-              <source media="(min-width: 768px)" srcset="img/main-slide-n-1.jpg">
-              <!-- Сюда вставляется картинка для мобилы -->
-              <img src="img/main-slide-n-1.jpg" alt="">
-            </picture>
-          </div>
-
-          <div class="info__slide">
-            <div class="info__slide-container container">
-              <div class="info__slide-content">
-                <div class="info__slide-text-main">
-                  -15%
-                </div>
-                <!-- ЗДЕСЬ ДОЛЖНА БЫТЬ ВОЗМОЖНОСТЬ ВСТАВЛЯТЬ НЕ ПРОСТО ТЕКСТ, А РАЗМЕТКУ!
-                Например, перенос строки - <br> -->
-                <div class="info__slide-text">
-                  Скидка на&nbsp;стеновые панели
-                </div>
-
-                <div class="info__slide__btns">
-                  <a class="btn-l-white btn-upper" href="#">Подробнее</a>
-                </div>
-              </div>
-
-              <!-- ЭТОТ БЛОК ДОБАВЛЯЕТСЯ ТОЛЬКО ЕСЛИ У СЛАЙДА ЕСТЬ ССЫЛКА НА АКЦИИ ИЛИ НА РАЗДЕЛ -->
-              <div class="info__slide-bottom">
-                <div class="container">
-
-                  <!-- Вставить ссылку на раздел -->
-                  <a class="ml-auto btn-arrow-link" href="#">Перейти в раздел
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <picture>
-              <!-- Сюда вставляется картинка для десктопа -->
-              <source media="(min-width: 768px)" srcset="img/main-slide.jpg">
-              <!-- Сюда вставляется картинка для мобилы -->
-              <img src="img/main-slide.jpg" alt="">
-            </picture>
-          </div>
+        <div class="content-page__bc bc">
+          <ul class="bc__list">
+            <li class="bc__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="bc__item">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="bc__item">
+              <a href="#">Современные двери</a>
+            </li>
+            <li class="bc__item">
+              <a href="#">Межкомнатная дверь
+                Tivoli А-1</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="slider-control__container container">
-          <div class="slider-control__btns" data-main-slider-btns>
-            <div class="slider-control__counter" data-main-slider-counter></div>
+        <h1 class="content-page__title">Tivoli</h1>
+      </div>
+    </div>
+
+    <section class="content-page__sect prod">
+      <div class="container container--content">
+
+        <div class="prod__desc">
+          <div class="prod__left">
+
+            <div class="prod__info-top d-xl-none">
+              <div class="prod__title h2">
+                Межкомнатная дверь Tivoli А-1
+              </div>
+
+              <div class="prod__status status-green">в наличии</div>
+            </div>
+
+            <div class="prod__slider-wrap">
+
+              <div class="prod__tag-wrap tag-wrap">
+                <!-- Шильдики -->
+                <div class="tag-container">
+                  <div class="prod__tag tag red">скидка 23%</div>
+                  <div class="prod__tag tag">новинка</div>
+                </div>
+
+                <!-- ONCLICK тут для демонстрации -->
+                <button class="btn-compare btn-like-gray" onclick="$(this).toggleClass('active')">
+                  <svg class="icon-like" width="23" height="19">
+                    <use xlink:href="#hn-like"></use>
+                  </svg>
+                </button>
+              </div>
+
+
+              <div class="prod__slider slider-prod slider-simple dots-flat" data-prod-slider>
+                <div class="slide">
+                  <!-- в data-src ссылка на большую картинку -->
+                  <a data-fancybox="demo" data-src="img/prod-card.jpg">
+                    <img src="img/prod-card.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="prod__fl">
+              <div class="block">
+                <div data-slider-container>
+                  <div class="block__top top">
+                    <div class="left">
+                      <h2 class="block__title">Интерьер</h2>
+                    </div>
+
+                    <div class="block__btns tabs-cont">
+                      <div class="slider-btns" data-slider-btns></div>
+                    </div>
+                  </div>
+
+                  <div class="cards-slider slider-simple cards-narrow def dots-flat" data-slider data-simple-slider
+                    data-dots="false" data-slide-count="2" data-slide-md-count="3" data-slide-lg-count="4"
+                    data-slide-xl-count="5" data-slide-xxl-count="3" data-slide-xxxl-count="3" data-loop="true">
+                    <div class="slide">
+                      <div class="prod__int-img-wrap">
+                        <a class="prod__int-img img-zoom" data-fancybox="demo" data-src="img/prod-int.jpg">
+                          <img src="img/prod-int.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="prod__int-img-wrap">
+                        <a class="prod__int-img img-zoom" data-fancybox="demo" data-src="img/prod-int.jpg">
+                          <img src="img/prod-int.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="prod__int-img-wrap">
+                        <a class="prod__int-img img-zoom" data-fancybox="demo" data-src="img/prod-int.jpg">
+                          <img src="img/prod-int.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="prod__int-img-wrap">
+                        <a class="prod__int-img img-zoom" data-fancybox="demo" data-src="img/prod-int.jpg">
+                          <img src="img/prod-int.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block">
+                <div class="block__top top">
+                  <div class="left">
+                    <h2 class="block__title">Дизайнерам</h2>
+                  </div>
+                </div>
+
+                <div class="prod__part">
+                  <p class="prod__part-text">3D модели дверей для ваших проектов <br class="d-inline-block">
+                    Особые условия сотрудничества</p>
+
+                  <div class="prod__part-info">
+                    <img src="img/prod-part.svg" alt="">
+
+                    <div class="prod__part-desc">
+                      <p>3dsMax 2015 +fbx</p>
+                      <p>Рендер:Vray+Corona</p>
+                      <p>Размер:47 МБ</p>
+                    </div>
+                  </div>
+
+                  <form class="prod__part-form form-outline" action="/" target="_blank" method="post">
+                    <div class="form-row row">
+                      <div class="col-12 col-md-6">
+                        <div class="form__item">
+                          <input type="text" name="prog-name" placeholder="Имя" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form__item">
+                          <input type="email" name="prog-tel" placeholder="Email" required>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form__footer">
+                      <!-- ТЕКСТ ОШИБКИ -->
+                      <!-- <div class="form__mess error">Введена некорректная информация</div> -->
+                      <!-- <div class="form__mess success">Данные успешно отправлены</div> -->
+
+                      <div class="form__bottom">
+                        <div class="form__conf">
+                          <input type="checkbox" id="prog-email" checked required>
+                          <label for="prog-email">
+                            <span>Согласен на обработку<br class="d-inline-block">
+                              персональных данных</span>
+                          </label>
+                        </div>
+
+                        <button class="form__submit btn-black btn-icon" type="submit"><span>cкачать</span>
+                          <svg width="8" height="11">
+                            <use xlink:href="#icon-btn-arrow-bottom"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prod__info">
+            <div class="prod__info-top d-none d-xl-flex">
+              <div class="prod__title h2">
+                Межкомнатная дверь Tivoli А-1
+              </div>
+
+              <div class="prod__status status-green">в наличии</div>
+            </div>
+
+            <div class="prod__chars acc" data-acc data-acc-one="false">
+              <!-- Система открывания -->
+              <div class="acc__item active" data-acc-item>
+                <div class="active" data-acc-title-wrap>
+                  <button class="acc__title active" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Система открывания</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                            ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                          -->
+                      <span class="selected-var">Дверь распашная, открывание на себя</span>
+                    </span>
+
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <div class="prod__checkboxes">
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-111" name="door-opened" checked>
+                      <label class="prod__checkbox-item" for="radio-111">
+                        <img src="img/prod-open-1.svg" alt="">
+
+                        <span class="prod__checkbox-tit">Дверь распашная
+                          открывание на&nbsp;себя
+                        </span>
+                      </label>
+                    </div>
+                    <!-- НА СЛУЧАЙ, ЕСЛИ ЭТИ ЭЛЕМЕНТЫ БУДУТ ССЫЛКАМИ. У АКТИВНОГО ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                    <!-- <div class="prod__checkbox">
+                      <a href="#" class="prod__checkbox-item active">
+                        <img src="img/prod-open-1.svg" alt="">
+
+                        <span class="prod__checkbox-tit">Дверь распашная
+                          открывание на&nbsp;себя
+                        </span>
+                      </a>
+                    </div> -->
+
+
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-112" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-112">
+                        <img src="img/prod-open-2.svg" alt="">
+                        <span class="prod__checkbox-tit">Дверь раздвижная
+                          в&nbsp;пенал
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-113" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-113">
+                        <img src="img/prod-open-3.svg" alt="">
+                        <span class="prod__checkbox-tit">Дверь раздвижная
+                          вдоль стены
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-114" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-114">
+                        <img src="img/prod-open-4.svg" alt="">
+                        <span class="prod__checkbox-tit">Дверь распашная
+                          в&nbsp;потолок
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-115" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-115">
+                        <img src="img/prod-open-5.svg" alt="">
+                        <span class="prod__checkbox-tit">Складная Twice
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-116" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-116">
+                        <img src="img/prod-open-6.svg" alt="">
+                        <span class="prod__checkbox-tit">Дверь распашная
+                          обратное открывание
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-117" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-117">
+                        <img src="img/prod-open-7.svg" alt="">
+                        <span class="prod__checkbox-tit">Дверь раздвижная
+                          внутри проёма
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-118" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-118">
+                        <img src="img/prod-open-8.svg" alt="">
+                        <span class="prod__checkbox-tit">Распашная в&nbsp;потолок
+                          обратное открывание
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-119" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-119">
+                        <img src="img/prod-open-9.svg" alt="">
+                        <span class="prod__checkbox-tit">Невидимка
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-1110" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-1110">
+                        <img src="img/prod-open-10.svg" alt="">
+                        <span class="prod__checkbox-tit">Рото
+                        </span>
+                      </label>
+                    </div>
+                    <div class="prod__checkbox">
+                      <input type="radio" id="radio-11101" name="door-opened">
+                      <label class="prod__checkbox-item" for="radio-11101">
+                        <img src="img/prod-open-11.svg" alt="">
+                        <span class="prod__checkbox-tit"> Раздвижные<br> invisible
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Материал и цвет -->
+              <div class="acc__item active" data-acc-item>
+                <div class="active" data-acc-title-wrap>
+                  <button class="acc__title selected-visible active" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Материал и цвет</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Графитово-серая эмаль по шпону</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <div class="prod__set-row">
+                    <div class="prod__set-left-col">
+                      <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ ЧЕКБОКСОВ: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                      <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                      <!-- У АКТИВНОЙ ССЫЛКИ ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                      <!-- <div class="checkboxes">
+                        <a href="#" class="checkbox active">
+                          <span class="label">Натуральный шпон</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Nano-flex шпон</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Nano-flex ST</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Эмаль</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Эмаль по шпону</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">HPL-покрытие</span>
+                        </a>
+                      </div> -->
+
+
+                      <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                      <div class="checkboxes">
+                        <div class="checkbox">
+                          <input type="radio" id="check-11" value="111" name="radio-mat" checked>
+                          <label for="check-11">Натуральный шпон</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-21" value="112" name="radio-mat">
+                          <label for="check-21">Nano-flex шпон</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-31" value="113" name="radio-mat">
+                          <label for="check-31">Nano-flex ST</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-41" value="114" name="radio-mat">
+                          <label for="check-41">Эмаль</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-51" value="115" name="radio-mat">
+                          <label for="check-51">Эмаль по шпону</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-61" value="116" name="radio-mat">
+                          <label for="check-61">HPL-покрытие</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prod__set-right-col">
+                      <!-- КАК Я ПОНЯЛА, НАЗВАНИЕ И АРТИКУЛ МЕНЯЮТСЯ С ВЫБОРОМ ЦВЕТА. ТО ЕСТЬ, ЕСЛИ КАРТИНКА-ЧЕКБОКС, ТО НАЗВАНИЕ ТУТ ДОЛЖНО МЕНЯТЬСЯ. А ЕСЛИ КАРТИНКА-ССЫЛКА, ТО СЮДА ВСТАВЛЯЕТСЯ НАЗВАНИЕ ПО УМОЛЧАНИЮ ПРИ ОБНОВЛЕНИИ СТРАНИЦЫ -->
+                      <p class="prod__set-item-res">Графитово-серая эмаль по шпону</p>
+                      <p class="prod__set-item-label">RAL 7024</p>
+
+                      <div class="prod__checkboxes prod__checkboxes-img">
+                        <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ КАРТИНОК: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                        <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                        <!-- НА СЛУЧАЙ, ЕСЛИ ЭТИ ЭЛЕМЕНТЫ БУДУТ ССЫЛКАМИ. У АКТИВНОГО ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                        <!-- <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item active">
+                            <img src="img/prod-color-select.png" alt="">
+                          </a>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item">
+                            <img src="img/prod-color-select.png" alt="">
+                          </a>
+                        </div> -->
+
+
+                        <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1112" name="door-mat" checked>
+                          <label class="prod__checkbox-item" for="radio-1112">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1113" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1113">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1114" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1114">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1115" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1115">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1116" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1116">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1117" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1117">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1118" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1118">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1119" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1119">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1120" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1120">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1121" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1121">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1122" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1122">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1123" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1123">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1124" name="door-mat">
+                          <label class="prod__checkbox-item" for="radio-1124">
+                            <img src="img/prod-color-select.png" alt="">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Цвет вставки -->
+              <div class="acc__item active" data-acc-item>
+                <div class="active" data-acc-title-wrap>
+                  <button class="acc__title selected-visible active" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Цвет вставки</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Со стеклом (ДО)</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <div class="prod__set-row">
+                    <div class="prod__set-left-col">
+                      <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ ЧЕКБОКСОВ: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                      <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                      <!-- У АКТИВНОЙ ССЫЛКИ ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                      <!-- <div class="checkboxes">
+                        <a href="#" class="checkbox active">
+                          <span class="label">Стекло черное</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Зеркало графит</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Зеркало бронза</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Зеркало серебро</span>
+                        </a>
+                      </div> -->
+
+
+                      <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                      <div class="checkboxes">
+                        <div class="checkbox">
+                          <input type="radio" id="check-1113" value="1112" name="radio-in" checked>
+                          <label for="check-1113">Стекло черное</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-2113" value="1113" name="radio-in">
+                          <label for="check-2113">Зеркало графит</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-3113" value="1114" name="radio-in">
+                          <label for="check-3113">Зеркало бронза</label>
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" id="check-4113" value="1115" name="radio-in">
+                          <label for="check-4113">Зеркало серебро</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prod__set-right-col">
+                      <div class="prod__checkboxes prod__checkboxes-img">
+                        <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ КАРТИНОК: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                        <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                        <!-- НА СЛУЧАЙ, ЕСЛИ ЭТИ ЭЛЕМЕНТЫ БУДУТ ССЫЛКАМИ. У АКТИВНОГО ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item def active">
+                            <img src="img/mirrow-1.png" alt="">
+                          </a>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item def">
+                            <img src="img/mirrow-2.png" alt="">
+                          </a>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item def">
+                            <img src="img/mirrow-3.png" alt="">
+                          </a>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <a href="#" class="prod__checkbox-item def">
+                            <img src="img/mirrow-4.png" alt="">
+                          </a>
+                        </div>
+
+
+                        <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                        <!-- <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1112-in" name="door-mat-in" checked>
+                          <label class="prod__checkbox-item def" for="radio-1112-in">
+                            <img src="img/mirrow-1.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1113-in" name="door-mat-in">
+                          <label class="prod__checkbox-item def" for="radio-1113-in">
+                            <img src="img/mirrow-2.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1114-in" name="door-mat-in">
+                          <label class="prod__checkbox-item def" for="radio-1114-in">
+                            <img src="img/mirrow-3.png" alt="">
+                          </label>
+                        </div>
+                        <div class="prod__checkbox prod__checkbox-img">
+                          <input type="radio" id="radio-1115-in" name="door-mat-in">
+                          <label class="prod__checkbox-item def" for="radio-1115-in">
+                            <img src="img/mirrow-4.png" alt="">
+                          </label>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Количество cтворок -->
+              <div class="acc__item " data-acc-item>
+                <div class="" data-acc-title-wrap>
+                  <button class="acc__title" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Количество cтворок</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Одностворчатая</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+
+                  <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ ЧЕКБОКСОВ: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                  <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                  <!-- У АКТИВНОЙ ССЫЛКИ ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                  <!-- <div class="checkboxes">
+                        <a href="#" class="checkbox active">
+                          <span class="label">Одностворчатая</span>
+                        </a>
+                        <a href="#" class="checkbox">
+                          <span class="label">Двустворчатая</span>
+                        </a>
+                      </div> -->
+
+
+                  <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                  <div class="checkboxes">
+                    <div class="checkbox">
+                      <input type="radio" id="check-1189" value="1189" name="radio-stv" checked>
+                      <label for="check-1189">Одностворчатая</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="radio" id="check-2189" value="1189" name="radio-stv">
+                      <label for="check-2189">Двустворчатая</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Толщина стены -->
+              <div class="acc__item " data-acc-item>
+                <div class="" data-acc-title-wrap>
+                  <button class="acc__title" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Толщина стены</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">200-229 мм., добор 90 мм. х 2</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+
+                  <!-- НИЖЕ ДВА ВАРИАНТА РЕАЛИЗАЦИИ ЧЕКБОКСОВ: ССЫЛКАМИ И ЧЕКБОКСАМИ -->
+
+                  <!-- 1 ВАРИАНТ : ЕСЛИ БУДУТ ССЫЛКИ -->
+                  <!-- У АКТИВНОЙ ССЫЛКИ ДОБАВЛЯЕТСЯ КЛАСС ACTIVE -->
+                  <!-- <div class="checkboxes">
+                    <a href="#" class="checkbox">
+                      <span class="label">до 62 мм., без добора</span>
+                    </a>
+                    <a href="#" class="checkbox">
+                      <span class="label">62-139 мм., добор 90 мм.</span>
+                    </a>
+                    <a href="#" class="checkbox">
+                      <span class="label">140-199 мм., добор 150 мм.</span>
+                    </a>
+                    <a href="#" class="checkbox active">
+                      <span class="label">200-229 мм., добор 90 мм. х 2</span>
+                    </a>
+                    <a href="#" class="checkbox">
+                      <span class="label">230-289 мм., добор 90 мм. и 150 мм.</span>
+                    </a>
+                  </div> -->
+
+
+                  <!-- 2 ВАРИАНТ : ЕСЛИ БУДУТ ЧЕКБОКСЫ -->
+                  <div class="checkboxes">
+                    <div class="checkbox">
+                      <input type="radio" id="check-11891" value="11891" name="radio-width">
+                      <label for="check-11891">до 62 мм., без добора</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="radio" id="check-21892" value="11892" name="radio-width">
+                      <label for="check-21892">62-139 мм., добор 90 мм.</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="radio" id="check-21893" value="11893" name="radio-width">
+                      <label for="check-21893">140-199 мм., добор 150 мм.</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="radio" id="check-21894" value="11894" name="radio-width" checked>
+                      <label for="check-21894">200-229 мм., добор 90 мм. х 2</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="radio" id="check-21895" value="11895" name="radio-width">
+                      <label for="check-21895">230-289 мм., добор 90 мм. и 150 мм.</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Дополнительные возможности -->
+              <div class="acc__item " data-acc-item>
+                <div class="" data-acc-title-wrap>
+                  <button class="acc__title" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Дополнительные возможности</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Количество 1 шт.</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <!-- Таблица -->
+                  <div class="table-wrap">
+                    <table class="prod__table">
+                      <tbody>
+                        <tr>
+                          <th>Кромка кремовая</th>
+                          <td class="nobr">1 887 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>Ral 9001</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Круглый наличник</th>
+                          <td class="nobr">0 <i class="rub">i</i></td>
+                          <td class="nobr">0 шт.</td>
+                          <td>Рустик</td>
+                          <td>
+                            <button data-open-modal="#select-params">Добавить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Дополнительное покрытие воском</th>
+                          <td class="nobr">0 <i class="rub">i</i></td>
+                          <td class="nobr">0 шт.</td>
+                          <td>Прозрачный</td>
+                          <td>
+                            <button data-open-modal="#select-params">Добавить</button>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <!-- ИТОГ -->
+              <div class="acc__item prod__res">
+                <div class="prod__res-left prod__set-left-col">
+                  <div class="prod__res-title d-none d-xxl-block">
+                    Итоговая стоимость
+                  </div>
+                  <button class="prod__btn btn-olive">Добавить в корзину</button>
+                </div>
+
+                <div class="prod__res-right">
+                  <div class="prod__res-title d-xxl-none">
+                    Итоговая стоимость
+                  </div>
+                  <div class="prod__res-checkboxes">
+                    <div class="prod__res-checkbox">
+                      <input type="radio" id="res-1" value="res-1" name="radio-res" checked>
+                      <label for="res-1">
+                        <span class="tit">За комплект</span>
+                        <span class="price-old">14 204</span>
+                        <span class="price nobr"> 12 747 <i class="rub">i</i></span>
+                      </label>
+                    </div>
+                    <div class="prod__res-checkbox">
+                      <input type="radio" id="res-2" value="res-2" name="radio-res">
+                      <label for="res-2">
+                        <span class="tit">За полотно</span>
+                        <span class="price-old">10 204</span>
+                        <span class="price nobr"> 9 204 <i class="rub">i</i></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Состав комплекта -->
+              <div class="acc__item  active" data-acc-item>
+                <div class=" active" data-acc-title-wrap>
+                  <button class="acc__title active" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+                      <span class="prod__set-left-col var">Состав комплекта</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Количество 7 шт.</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <!-- Таблица -->
+                  <div class="table-wrap">
+                    <table class="prod__table">
+                      <tbody>
+                        <tr>
+                          <th>Полотно 700x2000 мм.</th>
+                          <td class="nobr">11 887 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>Рустик</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Коробка дверная комплект
+                            на одностворчатую дверь</th>
+                          <td class="nobr">10 000 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>Рустик</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Наличник прямоугольный
+                            с хвостовиком, H=80мм</th>
+                          <td class="nobr">990 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>Рустик</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Ручка дверная FINO комплект </th>
+                          <td class="nobr">110 800 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>хром + хром матовый</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Петля дверная, 100*70*2,5-4ВВ</th>
+                          <td class="nobr">1 990 <i class="rub">i</i></td>
+                          <td class="nobr">2 шт.</td>
+                          <td>никель матовый</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Защелка с пластиковым язычком, под ключевой цилиндр, магнитная AGB, LM CL BL</th>
+                          <td class="nobr">12 500 <i class="rub">i</i></td>
+                          <td class="nobr">1 шт.</td>
+                          <td>черный</td>
+                          <td>
+                            <button data-open-modal="#select-params">Изменить</button>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <!-- Аксессуары -->
+              <div class="acc__item " data-acc-item>
+                <div class="" data-acc-title-wrap>
+                  <button class="acc__title" type="button" aria-hidden="true" data-acc-title>
+                    <span class="prod__set-params">
+
+                      <span class="prod__set-left-col var">Аксессуары</span>
+
+                      <!-- ПОСЛЕ ТОГО, КАК ПОЛЬЗОВАТЕЛЬ ВЫБРАЛ ВАРИАНТ, ТЕКСТ ВЫБРАННОГО ВАРИАНТА ВСТАВЛЯЕТСЯ СЮДА
+                          ПРИ ЗАГРУЗКЕ СТРАНИЦЫ ВСТАВИТЬ СЮДА ВАРИАНТ ПО УМОЛЧАНИЮ!
+                        -->
+                      <span class="selected-var">Количество 0 шт.</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="acc__body" data-acc-body>
+                  <!-- Таблица -->
+                  <div class="table-wrap">
+                    <table class="prod__table">
+                      <tbody>
+                        <tr>
+                          <th>Аксессуар дверной </th>
+                          <td class="nobr">800 <i class="rub">i</i></td>
+                          <td class="nobr">0 шт.</td>
+                          <td>черный</td>
+                          <td>
+                            <button data-open-modal="#select-params">Добавить</button>
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="prod__btns">
+              <button class="prod__btn btn-olive" data-open-modal="#buy-in-click">Заказать в 1 клик</button>
+              <button class="prod__btn btn-black" data-open-modal="#select-cons">Консультация</button>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Популярное -->
+    <!-- Выберите аксессуары -->
     <section class="block">
-      <div class="container container--content" data-slider-container>
+      <div class="container container--content pt-0" data-slider-container>
         <div class="block__top top">
           <div class="left">
-            <h2 class="block__title">Популярное</h2>
+            <h2 class="block__title">Выберите аксессуары</h2>
+          </div>
+
+          <div class="block__btns tabs-cont">
+            <div class="slider-btns" data-slider-btns></div>
+          </div>
+        </div>
+
+        <div class="cards-slider slider-simple def dots-flat" data-slider data-simple-slider data-dots="false"
+          data-slide-count="1" data-slide-md-count="2" data-slide-lg-count="3" data-slide-xl-count="5"
+          data-slide-xxl-count="5" data-slide-xxxl-count="5">
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-1.jpg" alt="">
+                  </div>
+                </a>
+
+                <!-- В МАКЕТЕ НЕ БЫЛО ШИЛЬДИКОВ И ЛАЙКА, ДОБАВИЛА НА ВСЯКИЙ СЛУЧАЙ -->
+                <!-- <div class="card__tag-wrap tag-wrap">
+                  <div class="tag-container">
+                    <div class="card__tag tag">новинка</div>
+                  </div>
+
+                  <button class="btn-compare def btn-like" onclick="$(this).toggleClass('active')">
+                    <svg class="icon-like" width="23" height="19">
+                      <use xlink:href="#hn-like"></use>
+                    </svg>
+                  </button>
+                </div> -->
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Стеновые
+                  панели
+                </a>
+                <div class="card__chars">
+                  <span>Низкий кофейный</span>
+                  <span>Рустик</span>
+                  <span>с выдвижным ящиком</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-2.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Накладки
+                  на входные двери
+                </a>
+                <div class="card__chars">
+                  <span>Низкий кофейный</span>
+                  <span>Рустик</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-3.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Рейки
+                  Баффели
+                </a>
+                <div class="card__chars">
+                  <span>Комплект из 12 шт</span>
+                  <span>Рустик</span>
+                  <span>2000x60x60 мм</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-4.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Стеновые
+                  панели
+                </a>
+                <div class="card__chars">
+                  <span>Рустик</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-5.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Рейки
+                  Баффели
+                </a>
+                <div class="card__chars">
+                  <span>Низкий кофейный</span>
+                  <span>Рустик</span>
+                  <span>с выдвижным ящиком</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-1.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Стеновые
+                  панели
+                </a>
+                <div class="card__chars">
+                  <span>Низкий кофейный</span>
+                  <span>Рустик</span>
+                  <span>с выдвижным ящиком</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card card-bg">
+              <div class="card__top">
+                <a class="card__img-wrap" href="#" aria-label="Перейти в карточку товара">
+                  <div class="card__img">
+                    <img src="img/card-acc-3.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="card__content">
+                <a class="card__title" data-card-title href="#">
+                  Стеновые
+                  панели
+                </a>
+                <div class="card__chars">
+                  <span>Низкий кофейный</span>
+                  <span>Рустик</span>
+                  <span>с выдвижным ящиком</span>
+                </div>
+                <div class="card__bottom">
+
+                  <div class="card__price price">
+                    <div class="price-old">21 750 </div>
+                    <div class="nobr"> 16 747 <i class="rub">i</i></div>
+                  </div>
+
+                  <a class="card__btn btn-olive btn-upper def">
+                    <span class="def">Купить</span>
+                    <img class="onadded" src="img/icon-cart-added.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Похожие модели -->
+    <section class="block">
+      <div class="container container--content pt-0" data-slider-container>
+        <div class="block__top top">
+          <div class="left">
+            <h2 class="block__title">Похожие модели</h2>
           </div>
 
           <div class="block__btns tabs-cont">
@@ -1280,908 +2385,222 @@
       </div>
     </section>
 
-    <!-- Преимущества -->
-    <section class="sot">
-      <div class="container container--content pt-0">
-        <h2 class="h1 text-upper text-center">Функциональное превосходство</h2>
 
-        <div class="sot__pl-list">
+    <!-- Корпоративная программа - десктоп -->
+    <section class="block over-hid d-none d-xl-block">
+      <div class="container--content pt-0">
+        <h2 class="visually-hidden">Корпоративная программа</h2>
+        <div class="bg-beige-overflow container">
 
-          <div class="sot__pl">
-            <div class="sot__pl-text">
-              100%
+          <div class="corp-block row">
+            <div class="col-12 col-xl-7">
+              <div class="container--content">
+                <p class="h1 text-upper">C зеркалом</p>
+                <p class="corp-block__comment d-none d-xl-block">Porta prima для дизайнеров и архитекторов<br>
+                  Среди нашего ассортимента вы подберете лучшее решение<br>
+                  для своего проекта на лучших условиях.</p>
+
+                <a class="btn-l-black btn-upper mt-4" href="#">Подробнее</a>
+
+                <div class="corp-block__img-demo">
+                  <img src="img/arct-demo-1.jpg" alt="">
+                  <img src="img/arct-demo-1.jpg" alt="">
+                  <img src="img/arct-demo-1.jpg" alt="">
+                </div>
+              </div>
             </div>
-            <p class="sot__pl-desc">Экологичность <br> материалов</p>
+
+            <div class="corp-block__img-wrap col-12 col-xl-5">
+              <img src="img/arct-big.jpg" alt="">
+            </div>
+
+
           </div>
 
-          <div class="sot__pl">
-
-            <div class="sot__pl-text">
-              5 лет
-            </div>
-            <p class="sot__pl-desc">Гарантия на&nbsp;двери</p>
-          </div>
-
-          <div class="sot__pl">
-
-            <div class="sot__pl-text">
-              300+
-            </div>
-            <p class="sot__pl-desc">Моделей<br class="d-inline-block d-sm-none"> дверей</p>
-          </div>
-
-          <div class="sot__pl">
-
-            <div class="sot__pl-text">
-              30 ЛЕТ
-            </div>
-            <p class="sot__pl-desc">Опыта в&nbsp;производстве
-              дверей </p>
-          </div>
-
-          <div class="sot__pl">
-
-            <div class="sot__pl-text">
-              3 года
-            </div>
-            <p class="sot__pl-desc">Гарантия на&nbsp;монтаж</p>
-          </div>
-
-          <div class="sot__pl">
-
-            <div class="sot__pl-text">
-              37+
-            </div>
-            <p class="sot__pl-desc">Фирменных салонов</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Коллекции -->
-    <section class="block block-dec parallax over-hid">
+    <!-- Корпоративная программа - мобилка -->
+    <section class="block block-dec parallax over-hid d-xl-none">
+      <h2 class="visually-hidden">Корпоративная программа</h2>
       <div class="parallax__content-wrap">
 
         <div class="parallax__content container container--content">
-          <h2 class="h1 text-upper">Коллекции</h2>
-          <p class="block-dec__text">Бескомпромиссное<br> качество&nbsp;и&nbsp;стиль, чтобы<br> подчеркнуть статус</p>
+          <h2 class="h1 text-upper">C зеркалом</h2>
+          <p class="block-dec__text d-md-none">Porta prima для дизайнеров и архитекторов<br>
+            Среди нашего ассортимента вы подберете лучшее решение<br>
+            для своего проекта на лучших условиях.</p>
 
-          <a class="block-dec__btn btn-l-white btn-upper" href="#">Посмотреть каталог</a>
+          <a class="block-dec__btn btn-l-white btn-upper" href="#">Подробнее</a>
         </div>
 
         <div class="parallax__image-wrap" style="background-image: url(img/main-slide.jpg);"></div>
       </div>
     </section>
 
-    <section class="block bg-text">
-      <div class="container container--content">
-        <h2 class="visually-hidden">Коллекции</h2>
-        <div class="preview-wrap">
 
-          <div class="preview-list">
-            <!-- Карточка -->
-            <div class="preview">
-              <a href="#" class="preview__img">
-                <img src="img/main-collect-1-1x.jpg" alt="" height="460">
-              </a>
-
-              <div class="preview__desc">
-                <p class="preview__title h2">Современные</p>
-                <p class="preview__text">Это стиль, который отличается своей простотой, лаконичностью и
-                  функциональностью.
-                </p>
-
-                <div class="preview__bottom">
-                  <a class="preview__btn btn-l-black btn-upper" href="#">Подробнее</a>
-                </div>
+    <!-- Модальное окно: изменение параметров -->
+    <div class="modal-wrap" id="select-params" data-modal>
+      <div class="modal prod-modal md" data-modal-container>
+        <div class="form in-modal">
+          <div class="modal__top">
+            <div class="modal__top-left prod__modal-top">
+              <div class="prod__modal-preview">
+                <img src="img/prod-card.jpg" alt="">
               </div>
+
+              <p class="prod__modal-tit">Tivoli А-1, Рустик</p>
             </div>
-
-            <!-- Карточка -->
-            <div class="preview">
-              <a href="#" class="preview__img">
-                <img src="img/main-collect-2-1x.jpg" alt="" height="460">
-              </a>
-
-              <div class="preview__desc">
-                <p class="preview__title h2">Классические</p>
-                <p class="preview__text">Стиль оформления помещения актуален во все времена, он не подвластен веяниям
-                  интерьерной моды, респектабелен, а каждая его деталь точно вписывается в общий дизайн комнаты.</p>
-                <div class="preview__bottom">
-                  <a class="preview__btn btn-l-black btn-upper" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-<!-- 
-          <button class="preview-wrap__more-btn more-btn btn-black" type="button">Показать ещё</button> -->
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Цикл -->
-    <section class="block">
-      <div class="container container--content pt-0">
-        <div class="row">
-          <div class="col-12 col-xl-5">
-            <h2 class="h1 text-upper">Полный цикл дверного сервиса</h2>
-          </div>
-          <div class="links-hor-wrap col-12 col-xl-7">
-            <div class="links-hor">
-              <a class="link-hor" href="#">
-                <span class="link-hor__desc">
-                  <span class="link-hor__title">Выбор двери</span>
-                  <span class="link-hor__text">Онлайн или в салоне, более 300 моделей,</span>
-                  <span class="link-hor__text">консультации
-                    специалиста.</span>
-                </span>
-              </a>
-              <a class="link-hor" href="#">
-                <span class="link-hor__desc">
-                  <span class="link-hor__title">Замер</span>
-                  <span class="link-hor__text">Выезд мастера на объект.</span>
-                  <span class="link-hor__text">Замер проемов.</span>
-                </span>
-              </a>
-              <a class="link-hor" href="#">
-                <span class="link-hor__desc">
-                  <span class="link-hor__title">Изготовление</span>
-                  <span class="link-hor__text">Согласование сроков и условий.</span>
-                  <span class="link-hor__text">Дверь со склада или под заказ.</span>
-                </span>
-              </a>
-              <a class="link-hor" href="#">
-                <span class="link-hor__desc">
-                  <span class="link-hor__title">Доставка и монтаж</span>
-                  <span class="link-hor__text">Доставка, установка. </span>
-                  <span class="link-hor__text">Приёмка работ. Гарантия.</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Подбор -->
-    <section class="block">
-      <div class="container container--content pt-0" data-slider-container>
-        <div class="block__top with-tabs top d-none d-md-flex">
-          <h2 class="visually-hidden">Подбор</h2>
-          <div class="tabs-wrap left">
-            <!-- Табы: кнопки для переключения -->
-
-            <ul class="block__tabs-hor tabs-hor tabs" data-tabs="tabs-podbor">
-              <li class="tabs__toggle" data-tabs-toggle="tab-1"><button aria-hidden="true">Материал и цвет</button>
-              </li>
-              <li class="tabs__toggle" data-tabs-toggle="tab-2"><button aria-hidden="true">Тип открывания</button>
-              </li>
-              <li class="tabs__toggle" data-tabs-toggle="tab-3"><button aria-hidden="true">Стиль</button></li>
-            </ul>
-
-          </div>
-
-          <div class="block__btns tabs-cont">
-            <div class="slider-btns" data-slider-btns data-tabs-content="tabs-podbor"></div>
-          </div>
-        </div>
-        <div class="tabs-cont tabs-mob-visible" data-tabs-content="tabs-podbor">
-          <!-- Материал и цвет -->
-          <div class="tabs-cont__item" data-tabs-item="tab-1">
-            <div class="block__top top d-flex d-md-none">
-              <div class="left">
-                <h3 class="block__title h2">Материал и цвет</h3>
-              </div>
-              <div class="slider-btns" data-slider-added-buttons>
-                <button type="button" class="slick-prev slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-prev"></use>
-                  </svg>
-                </button>
-                <button type="button" class="slick-next slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-next"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="preview-slider cards-slider slider-simple cards-narrow def" data-slider data-simple-slider
-              data-dots="false" data-slide-count="1" data-slide-md-count="2" data-slide-lg-count="2"
-              data-slide-xl-count="3" data-slide-xxl-count="4" data-slide-xxxl-count="5">
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-1.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-2.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">Натуральный
-                      шпон</p>
-                    <p class="preview__text">Это тончайший слой натурального дерева, который используется для отделки
-                      мебели.
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-3.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-5.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-5.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="modal__close">
+              <button class="btn-close" type="button" aria-hidden="true" data-modal-close>
+                <svg width="18" height="18">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
             </div>
           </div>
 
-          <!-- Тип открывания -->
-          <div class="tabs-cont__item" data-tabs-item="tab-2">
-            <div class="block__top top d-flex d-md-none">
-              <div class="left">
-                <h3 class="block__title h2">Тип открывания</h3>
+          <div class="prod__modal-select">
+            <div class="prod__modal-select-title">
+              Выберите цвет кромки
+            </div>
+
+            <form class="prod__modal-select-table" action="#">
+              <!-- Элемент -->
+              <div class="prod__checkbox-row">
+                <input type="radio" id="modal-select-1" name="modal-select" checked>
+                <label class="prod__checkbox-row-label" for="modal-select-1">
+                  <span class="prod__checkbox-row-img">
+                    <img src="img/prod-modal-1.jpg" alt="">
+                  </span>
+                  <span class="prod__checkbox-row-text">
+                    <span class="tit">Алюминиевая</span>
+                    <span class="param">Цвет: <span>Серебро</span></span>
+                  </span>
+
+                  <span class="prod__checkbox-row-check">
+                    <span class="price nobr"> 1 204 <i class="rub">i</i></span>
+                  </span>
+                </label>
               </div>
-              <div class="slider-btns" data-slider-added-buttons>
-                <button type="button" class="slick-prev slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-prev"></use>
-                  </svg>
-                </button>
-                <button type="button" class="slick-next slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-next"></use>
-                  </svg>
-                </button>
+              <!-- Элемент -->
+              <div class="prod__checkbox-row">
+                <input type="radio" id="modal-select-3" name="modal-select">
+                <label class="prod__checkbox-row-label" for="modal-select-3">
+                  <span class="prod__checkbox-row-img">
+                    <img src="img/prod-modal-2.jpg" alt="">
+                  </span>
+                  <span class="prod__checkbox-row-text">
+                    <span class="tit">Алюминиевая</span>
+                    <span class="param">Цвет: <span>Черный</span></span>
+                  </span>
+
+                  <span class="prod__checkbox-row-check">
+                    <span class="price-old">2 204</span>
+                    <span class="price nobr"> 1 800 <i class="rub">i</i></span>
+                  </span>
+                </label>
+              </div>
+              <!-- Элемент -->
+              <div class="prod__checkbox-row">
+                <input type="radio" id="modal-select-2" name="modal-select">
+                <label class="prod__checkbox-row-label" for="modal-select-2">
+                  <span class="prod__checkbox-row-img">
+                    <img src="img/prod-modal-3.jpg" alt="">
+                  </span>
+                  <span class="prod__checkbox-row-text">
+                    <span class="tit">Алюминиевая</span>
+                    <span class="param">Цвет: <span>Коричневая</span></span>
+                  </span>
+
+                  <span class="prod__checkbox-row-check">
+                    <span class="price-old">2 204</span>
+                    <span class="price nobr"> 1 900 <i class="rub">i</i></span>
+                  </span>
+                </label>
+              </div>
+            </form>
+
+            <p class="prod__modal-comm">Обратитесь за консультацией, если не нашли то что искали</p>
+
+            <div class="modal__bottom">
+              <div class="prod__btns">
+                <button type="button" class="prod__btn btn-black" data-open-modal="#select-cons">Консультация</button>
+                <button type="button" class="prod__btn btn-olive" data-modal-close>Добавить</button>
+
               </div>
             </div>
-            <div class="preview-slider cards-slider slider-simple cards-narrow def" data-slider data-simple-slider
-              data-dots="false" data-slide-count="1" data-slide-md-count="2" data-slide-lg-count="2"
-              data-slide-xl-count="3" data-slide-xxl-count="4" data-slide-xxxl-count="5">
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
 
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-5.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Стиль -->
-          <div class="tabs-cont__item" data-tabs-item="tab-3">
-            <div class="block__top top d-flex d-md-none">
-              <div class="left">
-                <h3 class="block__title h2">Стиль</h3>
-              </div>
-              <div class="slider-btns" data-slider-added-buttons>
-                <button type="button" class="slick-prev slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-prev"></use>
-                  </svg>
-                </button>
-                <button type="button" class="slick-next slick-arrow">
-                  <svg width="48" height="16">
-                    <use xlink:href="#icon-arrow-next"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="preview-slider cards-slider slider-simple cards-narrow def" data-slider data-simple-slider
-              data-dots="false" data-slide-count="1" data-slide-md-count="2" data-slide-lg-count="2"
-              data-slide-xl-count="3" data-slide-xxl-count="4" data-slide-xxxl-count="5">
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-5.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-1.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-2.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">Натуральный
-                      шпон</p>
-                    <p class="preview__text">Это тончайший слой натурального дерева, который используется для отделки
-                      мебели.
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-3.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-4.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">HLP
-                      покрытие</p>
-                    <p class="preview__text">Композитный листовой облицовочный материал от итальянских компаний Arpa
-                      Industriale
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="preview">
-                  <a href="#" class="preview__img">
-                    <img src="img/ex-card-5.jpg" alt="">
-                  </a>
-
-                  <div class="preview__desc">
-                    <p class="preview__title h2">шпон
-                      Nano-flex soft touch </p>
-                    <p class="preview__text">Придает дверям элегантный и стильный внешний вид, делая их привлекательными
-                    </p>
-
-                    <div class="preview__bottom">
-                      <a class="preview__btn card__btn btn-olive btn-upper" href="#">Купить</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-    </section>
 
+    </div>
 
-    <!-- Корпоративная программа -->
-    <section class="block over-hid">
-      <div class="container--content pt-0">
-        <div class="container d-none d-xl-block">
-          <h2 class="block__title">Особые условия для дизайнеров и архитекторов</h2>
+    <!-- Модальное окно: купить в 1 клик -->
+    <div class="modal-wrap" id="buy-in-click" data-modal>
+      <div class="modal md" data-modal-container>
+        <div class="modal__top und">
+          <p class="modal__title h2">Заказать в 1 клик</p>
+          <div class="modal__close">
+            <button class="btn-close" type="button" aria-hidden="true" data-modal-close>
+              <svg width="18" height="18">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-
-        <div class="bg-beige-overflow container">
-          <div class="container--content">
-            <p class="h1 text-upper d-block d-xl-none">Корпоративная
-              программа</p>
-            <div class="corp-block row">
-              <div class="col-12 col-xl-5">
-                <div class="corp-block__steps">
-                  <div class="links-hor-wrap">
-                    <div class="links-hor">
-                      <div class="link-hor">
-                        <div class="link-hor__desc">
-                          <div class="link-hor__numed">
-                            <span class="link-hor__num">01</span>
-                            <div class="link-hor__title">Промоушен и реклама в&nbsp;соцсетях<br class="d-inline-block">
-                              и&nbsp;на&nbsp;сайте
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="link-hor">
-                        <div class="link-hor__desc">
-                          <div class="link-hor__numed">
-                            <span class="link-hor__num">02</span>
-                            <div class="link-hor__title">Корпоративные скидки<br class="d-inline-block"> и бонусы</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="link-hor">
-                        <div class="link-hor__desc">
-                          <div class="link-hor__numed">
-                            <span class="link-hor__num">03</span>
-                            <div class="link-hor__title">Библиотека 3D-моделей<br class="d-inline-block"> и текстуры
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <form class="form form-in-white modal__form" action="/" target="_blank" method="post">
+          <div class="form-row row">
+            <div class="col-12 col-md-6">
+              <div class="form__item">
+                <input type="text" name="click-name" placeholder="Имя" required>
               </div>
-
-              <div class="col-12 col-xl-7">
-                <p class="h1 text-upper d-none d-xl-block">Корпоративная
-                  программа</p>
-                <p class="corp-block__comment d-none d-xl-block">Porta prima для дизайнеров и архитекторов<br>
-                  Среди нашего ассортимента вы подберете лучшее решение<br>
-                  для своего проекта на лучших условиях.</p>
-
-                <form class="corp-block__form" action="/" target="_blank" method="post">
-                  <div class="form-row row">
-                    <div class="col-12 col-md-6">
-                      <div class="form__item">
-                        <input type="text" name="prog-name" placeholder="Имя" required>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="form__item">
-                        <input type="tel" name="prog-tel" placeholder="Телефон" required>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="form__footer">
-                    <!-- ТЕКСТ ОШИБКИ -->
-                    <!-- <div class="form__mess error">Введена некорректная информация</div> -->
-                    <!-- <div class="form__mess success">Данные успешно отправлены</div> -->
-
-                    <div class="form__bottom">
-                      <div class="form__conf">
-                        <input type="checkbox" id="prog-email" checked required>
-                        <label for="prog-email">
-                          <span>Согласен на обработку<br class="d-inline-block">
-                            персональных данных</span>
-                        </label>
-                      </div>
-
-                      <button class="form__submit btn-black" type="submit">Отправить</button>
-                    </div>
-                  </div>
-
-                </form>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form__item">
+                <input type="text" name="click-tel" placeholder="Мобильный телефон" required>
               </div>
             </div>
           </div>
-        </div>
+          <div class="form-row row">
+            <div class="col-12 col-md-6">
+              <div class="form__item">
+                <input type="email" name="click-tel" placeholder="Email" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__item">
+            <textarea name="click-text" id="click-text" cols="30" rows="5" placeholder="Комментарий"></textarea>
+          </div>
+
+          <!-- ТЕКСТ ОШИБКИ -->
+          <!-- <div class="form__mess error">Введена некорректная информация</div> -->
+          <!-- <div class="form__mess success">Данные успешно отправлены</div> -->
+
+          <div class="modal__footer">
+            <div class="form__bottom">
+              <div class="form__conf">
+                <input type="checkbox" id="click-email" checked required>
+                <label for="click-email">
+                  <span>Согласен на обработку<br class="d-inline-block">
+                    персональных данных</span>
+                </label>
+              </div>
+
+              <button class="form__submit btn-olive" type="submit">Отправить
+              </button>
+            </div>
+          </div>
+
+        </form>
       </div>
-    </section>
+
+    </div>
 
 
-    <!-- Отзывы -->
-    <section class="block">
-      <div class="container container--content pt-0" data-slider-container>
-        <div class="block__top top">
-          <div class="left">
-            <h2 class="block__title">Отзывы <span class="d-none d-md-inline">о сотрудничестве</span></h2>
-          </div>
-
-          <div class="block__btns tabs-cont">
-            <div class="slider-btns" data-slider-btns></div>
-          </div>
-        </div>
-
-        <div class="cards-slider slider-simple cards-narrow def" data-slider data-simple-slider data-dots="false"
-          data-slide-count="1" data-slide-md-count="1" data-slide-lg-count="1" data-slide-xl-count="2"
-          data-slide-xxl-count="2" data-slide-xxxl-count="2">
-          <div class="slide">
-            <div class=" review">
-              <div class="review__top">
-                <div class="review__img">
-                  <img src="img/soc-1.jpg" alt="">
-                </div>
-
-                <div class="review__user">
-                  <p class="review__name"> Алла Бакланова</p>
-                  <p class="review__comment">Дизайнер,<br> основатель allabaklanova.ru</p>
-                </div>
-
-                <div class="review__social">
-                  <a class="review__social-link vk" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-vk"></use>
-                    </svg>
-                  </a>
-
-                  <a class="review__social-link teleg" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-teleg"></use>
-                    </svg>
-
-                  </a>
-                </div>
-              </div>
-              <div class="review__text">В своих проектах использую современные и классические коллекции дверей Porta
-                prima. Ни разу не подводило качество производства и монтажа. Рекомендую фабрику как надежного партнера!
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class=" review">
-              <div class="review__top">
-                <div class="review__img">
-                  <img src="img/soc-2.jpg" alt="">
-                </div>
-
-                <div class="review__user">
-                  <p class="review__name">Артём Тулупов</p>
-                  <p class="review__comment">Дизайнер,<br> oснователь студии symmetry-design.ru</p>
-                </div>
-
-                <div class="review__social">
-                  <a class="review__social-link vk" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-vk"></use>
-                    </svg>
-                  </a>
-
-                  <a class="review__social-link teleg" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-teleg"></use>
-                    </svg>
-
-                  </a>
-                </div>
-              </div>
-              <div class="review__text">Продукция является одной из лучших в отрасли. Двери отличаются высоким качеством
-                материалов и уникальным дизайном, что позволяет создавать потрясающие интерьерные решения для моих
-                клиентов.
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class=" review">
-              <div class="review__top">
-                <div class="review__img">
-                  <img src="img/soc-1.jpg" alt="">
-                </div>
-
-                <div class="review__user">
-                  <p class="review__name"> Алла Бакланова</p>
-                  <p class="review__comment">Дизайнер,<br> основатель allabaklanova.ru</p>
-                </div>
-
-                <div class="review__social">
-                  <a class="review__social-link vk" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-vk"></use>
-                    </svg>
-                  </a>
-
-                  <a class="review__social-link teleg" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-teleg"></use>
-                    </svg>
-
-                  </a>
-                </div>
-              </div>
-              <div class="review__text">В своих проектах использую современные и классические коллекции дверей Porta
-                prima. Ни разу не подводило качество производства и монтажа. Рекомендую фабрику как надежного партнера!
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class=" review">
-              <div class="review__top">
-                <div class="review__img">
-                  <img src="img/soc-2.jpg" alt="">
-                </div>
-
-                <div class="review__user">
-                  <p class="review__name">Артём Тулупов</p>
-                  <p class="review__comment">Дизайнер,<br> oснователь студии symmetry-design.ru</p>
-                </div>
-
-                <div class="review__social">
-                  <a class="review__social-link vk" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-vk"></use>
-                    </svg>
-                  </a>
-
-                  <a class="review__social-link teleg" href="#">
-                    <svg width="23" height="23">
-                      <use xlink:href="#soc-teleg"></use>
-                    </svg>
-
-                  </a>
-                </div>
-              </div>
-              <div class="review__text">Продукция является одной из лучших в отрасли. Двери отличаются высоким качеством
-                материалов и уникальным дизайном, что позволяет создавать потрясающие интерьерные решения для моих
-                клиентов.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="reviews-btn-block">
-          <div class="reviews-btn-block__range">
-            <a class="d-none d-md-block" href="#">
-              <img src="img/footer-reit.svg" alt="">
-            </a>
-          </div>
-          <a href="#" class="reviews-btn-block__btn btn-olive">Оставить отзыв</a>
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <!-- Карта -->
-    <section class="block">
-      <div class="container container--content pt-0">
-        <div class="block__top top">
-          <div class="left">
-            <h2 class="block__title">Найти салон на карте</h2>
-          </div>
-        </div>
-        <div class="map-block">
-          <div class="map-block__addresses addresses scrolled-block">
-            <a class="address" href="#">
-              <span class="address__title">ТЦ Румянцево</span>
-              <span class="address__info">
-                <span>Ежедневно 10:00-21:00, без перерыва</span>
-                <span>+7 (495) 159-80-42 доб. 252</span>
-              </span>
-            </a>
-
-            <a class="address" href="#">
-              <span class="address__title">ТЦ Город-Лефортово</span>
-              <span class="address__info">
-                <span>Ежедневно 10:00-22:00, без перерыва</span>
-                <span>+7 (495) 159-80-42 доб. 252</span>
-              </span>
-            </a>
-
-            <a class="address" href="#">
-              <span class="address__title">ТЦ Экспострой</span>
-              <span class="address__info">
-                <span>Ежедневно 10:00-22:00, без перерыва</span>
-                <span>+7 (495) 159-80-42 доб. 249</span>
-              </span>
-            </a>
-
-            <a class="address" href="#">
-              <span class="address__title">ТЦ Город-Лефортово</span>
-              <span class="address__info">
-                <span>Ежедневно 10:00-22:00, без перерыва</span>
-                <span>+7 (495) 159-80-42 доб. 252</span>
-              </span>
-            </a>
-
-            <a class="address" href="#">
-              <span class="address__title">ТЦ Экспострой</span>
-              <span class="address__info">
-                <span>Ежедневно 10:00-22:00, без перерыва</span>
-                <span>+7 (495) 159-80-42 доб. 252</span>
-              </span>
-            </a>
-
-          </div>
-
-          <div id="map" class="map-block__map" style="height: 350px;">
-            <!-- Удалить картинку, div оставить и его привязать к картам -->
-            <img class="" src="img/map.jpg" alt="Наши филиалы">
-
-            <!-- Пин лежит /img/map-pin.svg -->
-          </div>
-
-        </div>
-      </div>
-    </section>
 
     <!-- Модальное окно: выбор города -->
     <div class="modal-wrap" id="select-region" data-modal>
