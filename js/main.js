@@ -360,6 +360,11 @@ $(window).on('load', (function () {
     }
   };
 
+  window.onClose = function () {
+    window.onCloseMenu();
+    closeModals();
+  };
+
 
   // OPEN
   $('[data-open]').each(function () {
@@ -551,7 +556,7 @@ $('[data-catalog]').each(function () {
   }
 
   const onCloseByClick = function (evt) {
-    if(!evt.target.hasAttribute('data-header') && evt.target.closest('[data-header]') === null) {
+    if (!evt.target.hasAttribute('data-header') && evt.target.closest('[data-header]') === null) {
       onClose();
     }
   }
@@ -908,23 +913,103 @@ $('[data-range-slider-wrap]').each(function () {
       max.val(data.to);
     }
   });
-
-
-  // FILTER OPEN MOB
-
-  $('[data-filter-open-btn]').on('click', function () {
-    $('[data-filter]').addClass('active');
-    $('body').addClass('filter-is-opened');
-  });
-
-  $('[data-filter-close-btn]').on('click', function () {
-    $('[data-filter]').removeClass('active');
-    $('body').removeClass('filter-is-opened');
-  });
-
-
-
 });
+
+
+// FILTER OPEN MOB
+
+$('[data-filter-open-btn]').on('click', function () {
+  $('[data-filter]').addClass('active');
+  $('body').addClass('filter-is-opened');
+});
+
+$('[data-filter-close-btn]').on('click', function () {
+  $('[data-filter]').removeClass('active');
+  $('body').removeClass('filter-is-opened');
+});
+
+
+// CONTACTS
+
+const initContacts = function () {
+  $('[data-contacts]').each(function () {
+
+    const contacts = $(this);
+    const items = contacts.find('[data-contacts-item]');
+
+    items.each(function () {
+      const item = $(this);
+      const tit = item.find('[data-contacts-title-link]');
+      const detail = item.find('[data-contacts-detail-link]');
+
+      tit.on('click', function () {
+        contacts.find('[data-contacts-title-link]').removeClass('active');
+        contacts.find('[data-contacts-detail-link]').removeClass('active');
+        tit.addClass('active');
+        detail.addClass('active');
+      });
+
+      detail.on('click', function () {
+        contacts.find('[data-contacts-title-link]').removeClass('active');
+        contacts.find('[data-contacts-detail-link]').removeClass('active');
+        tit.addClass('active');
+        detail.addClass('active');
+      });
+    })
+  });
+
+};
+window.initContacts = initContacts;
+window.initContacts();
+
+window.updateContact = function () {
+  $('[data-updated-contact]').each(function () {
+
+    // modal 
+    const btn = $(this).find('[data-open-modal]');
+
+    btn.on('click', function () {
+      const modal = $($(this).attr('data-open-modal'));
+      window.onCloseMenu();
+      window.onClose();
+      $(this).blur();
+  
+      if (modal.length > 0) {
+        modal.addClass('active');
+  
+        $('body').css({
+          'overflow': 'hidden',
+        });
+      }
+    });
+
+    // fancy
+    $(this).find('[data-fancybox]').fancybox();
+
+    // slick
+    $('[data-contact-slider]').each(function () {
+      $(this).slick({
+        fade: true,
+        accessibility: false,
+        speed: 800,
+        draggable: true,
+        waitForAnimate: true,
+        dots: true,
+        arrows: false,
+        swipeToSlide: true,
+        autoplay: false,
+        responsive: [{
+          breakpoint: 1199,
+          settings: {
+            draggable: true,
+            speed: 150,
+            fade: false,
+          }
+        }]
+      });
+    });
+  });
+};
 
 
 

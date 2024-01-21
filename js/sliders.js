@@ -406,4 +406,27 @@ $(document).ready(function () {
       }]
     });
   });
+
+  
+  $('[data-contact-slider]').each(function () {
+    $(this).slick({
+      fade: true,
+      accessibility: false,
+      speed: 800,
+      draggable: true,
+      waitForAnimate: true,
+      dots: true,
+      arrows: false,
+      swipeToSlide: true,
+      autoplay: false,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          draggable: true,
+          speed: 150,
+          fade: false,
+        }
+      }]
+    });
+  });
 });

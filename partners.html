@@ -849,52 +849,203 @@
               <a href="#">Главная</a>
             </li>
             <li class="bc__item">
-              <a href="#">Корзина</a>
+              <a href="#">Для дизайнеров и архитекторов</a>
             </li>
           </ul>
         </div>
-
-        <h1 class="content-page__title visually-hidden">Корзина</h1>
       </div>
     </div>
 
-
-    <!-- Когда корзина пустая, вставляется этот блок целиком -->
-    <section class="content-page__sect">
-      <div class="container container--content">
+    <section class="block">
+      <div class="container container--content container--text pb-4">
         <div class="block__top top">
           <div class="left">
-            <h2 class="block__title">Товары в корзине:</h2>
+            <h1 class="block__title h2">Для дизайнеров и архитекторов</h1>
           </div>
         </div>
+      </div>
+      <div class="container container--content container--text pt-0">
+        <p>В Porta prima действует программа сотрудничества с практикующими дизайнерами и архитекторами. Каждый
+          участник, зарегистрированный в программе, получает индивидуальную карту участника, с которым он, его
+          представитель или его клиент может разместить заказ в любом фирменном салоне Porta prima с самыми выгодными
+          условиями.</p>
 
-        <div class="empty-block">
-          <div class="empty-block__container">
-            <div class="empty-block__body">
-              <p class="h2 mb-3">Корзина пуста</p>
-  
-              <p class="text-center">Воспользуйтесь поиском, чтобы <br class="d-inline-block"> найти товары или выберете их <br class="d-inline-block"> в&nbsp;каталоге.</p>
+        <div class="block__top top mt-5">
+          <h2 class="block__title h1 text-upper">Скидки и бонусы</h2>
+        </div>
+        <p>Прозрачные условия сотрудничества, корпоративные скидки и бонусы.</p>
 
-              <p class="mt-3 mb-0"><a href="#" class="btn-def"><b>Перейти в каталог</b></a></p>
-  
-              <form class="empty-block_search search-line" action="/">
-  
-                <input class="menu-item def" type="text" placeholder="Поиск" required="" autocomplete="off">
-  
-                <button class="header__search-btn btn-def" aria-label="Найти">
-                  <svg width="25" height="25">
-                    <use xlink:href="#hn-search"></use>
-                  </svg>
-                </button>
-  
-  
-              </form>
+        <div class="block__top top mt-4">
+          <h2 class="block__title h1 text-upper">Промоушен</h2>
+        </div>
+        <p>Размещаем лучшие проекты дизайнеров на сайте Porta prima, и в наших социальных сетях.</p>
+
+        <div class="block__top top mt-4">
+          <h2 class="block__title h1 text-upper">3D материалы</h2>
+        </div>
+        <p>Готовые библиотеки 3D-моделей и текстуры межкомнатных дверей и перегородок Porta prima.</p>
+      </div>
+    </section>
+
+    <!-- Корпоративная программа -->
+    <div class="block over-hid">
+      <div class="container--content pt-0">
+
+        <div class="bg-beige-overflow container ">
+          <div class="container--content">
+            <p class="h1 text-upper d-block d-xl-none">Корпоративная
+              программа</p>
+            <div class="corp-block row">
+              <div class="col-12 col-xl-5">
+                <div class="corp-block__steps">
+                  <div class="links-hor-wrap">
+                    <div class="links-hor">
+                      <div class="link-hor">
+                        <div class="link-hor__desc">
+                          <div class="link-hor__numed">
+                            <span class="link-hor__num">01</span>
+                            <div class="link-hor__title">Промоушен и реклама в&nbsp;соцсетях<br class="d-inline-block">
+                              и&nbsp;на&nbsp;сайте
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="link-hor">
+                        <div class="link-hor__desc">
+                          <div class="link-hor__numed">
+                            <span class="link-hor__num">02</span>
+                            <div class="link-hor__title">Корпоративные скидки<br class="d-inline-block"> и бонусы</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="link-hor">
+                        <div class="link-hor__desc">
+                          <div class="link-hor__numed">
+                            <span class="link-hor__num">03</span>
+                            <div class="link-hor__title">Библиотека 3D-моделей<br class="d-inline-block"> и текстуры
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-7">
+                <p class="h1 text-upper d-none d-xl-block">Корпоративная
+                  программа</p>
+                <p class="corp-block__comment d-none d-xl-block">Porta prima для дизайнеров и архитекторов<br>
+                  Среди нашего ассортимента вы подберете лучшее решение<br>
+                  для своего проекта на лучших условиях.</p>
+
+                <form class="corp-block__form" action="/" target="_blank" method="post">
+                  <div class="form-row row">
+                    <div class="col-12 col-md-6">
+                      <div class="form__item">
+                        <input type="text" name="prog-name" placeholder="Имя" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form__item">
+                        <input type="tel" name="prog-tel" placeholder="Телефон" required>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form__footer">
+                    <!-- ТЕКСТ ОШИБКИ -->
+                    <!-- <div class="form__mess error">Введена некорректная информация</div> -->
+                    <!-- <div class="form__mess success">Данные успешно отправлены</div> -->
+
+                    <div class="form__bottom">
+                      <div class="form__conf">
+                        <input type="checkbox" id="prog-email" checked required>
+                        <label for="prog-email">
+                          <span>Согласен на обработку<br class="d-inline-block">
+                            персональных данных</span>
+                        </label>
+                      </div>
+
+                      <button class="form__submit btn-black" type="submit">Отправить</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Проекты -->
+    <section class="block">
+      <div class="container container--content container--text pt-0">
+        <div class="block__top top">
+          <div class="left">
+            <h2 class="block__title h2">Проекты</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item-wrap col-12 col-md-6 col-lg-12">
+            <div class="act">
+              <a href="news-detail.html" class="act__img">
+                <img src="img/news.jpg" alt="">
+              </a>
+
+              <div class="act__desc">
+                <div class="act__title h2">
+                  Проект квартиры. Дизайнер Шуклина Мария
+                </div>
+
+                <div class="act__bottom">
+                  <div class="act__date">
+                    <div>Стиль: современный</div>
+                    <div>Продукция Porta prima:</div>
+                    <div class="mb-3">Imperia-R NEO Classic </div>
+                    <div>Город: Москва</div>
+                    <div>Автор проекта:  Шуклина Мария</div>
+                  </div>
+
+                  <a href="news-detail.html" class="act__btn btn-black">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-wrap col-12 col-md-6 col-lg-12">
+            <div class="act">
+              <a href="news-detail.html" class="act__img">
+                <img src="img/news.jpg" alt="">
+              </a>
+
+              <div class="act__desc">
+                <div class="act__title h2">
+                  Проект квартиры. Дизайнер Шуклина Мария
+                </div>
+
+                <div class="act__bottom">
+                  <div class="act__date">
+                    <div>Стиль: современный</div>
+                    <div>Продукция Porta prima:</div>
+                    <div class="mb-3">Imperia-R NEO Classic </div>
+                    <div>Город: Москва</div>
+                    <div>Автор проекта:  Шуклина Мария</div>
+                  </div>
+
+                  <a href="news-detail.html" class="act__btn btn-black">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
+        </div>
+
+        <button class="act__more-btn more-btn btn-b-black" type="button">Показать ещё</button>
+
+      </div>
     </section>
 
 
