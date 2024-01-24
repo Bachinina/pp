@@ -11143,6 +11143,9 @@ input:checked + .prod__checkbox-item img,
           flex-direction: column;
   background-color: #E6D7C2;
   padding: 20px 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media (max-width: 991px) {
   .act__desc {
